@@ -24,9 +24,9 @@ class Magazine
       @name = new_name
     end
     
-    # def category=(new_category)
-    #   @category = new_category
-    # end
+    def category=(new_category)
+      @category = new_category
+    end
     
     # def articles
     #   Article.all.select { |article| article.magazine == self }
