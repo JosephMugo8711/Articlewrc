@@ -20,9 +20,9 @@ class Magazine
       @@all.find { |magazine| magazine.name == name }
     end
     
-    # def name=(new_name)
-    #   @name = new_name
-    # end
+    def name=(new_name)
+      @name = new_name
+    end
     
     # def category=(new_category)
     #   @category = new_category
