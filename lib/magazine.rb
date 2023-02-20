@@ -36,10 +36,10 @@ class Magazine
       articles.map { |article| article.title }
     end
     
-    # def contributing_authors
-    #   Article.all.select { |article| article.magazine == self }
-    #              .group_by { |article| article.author }
-    #              .select { |author, articles| articles.size > 2 }
-    #              .keys
-    # end
+    def contributing_authors
+      Article.all.select { |article| article.magazine == self }
+                 .group_by { |article| article.author }
+                 .select { |author, articles| articles.size > 2 }
+                 .keys
+    end
   end
