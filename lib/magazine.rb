@@ -28,13 +28,13 @@ class Magazine
       @category = new_category
     end
     
-    # def articles
-    #   Article.all.select { |article| article.magazine == self }
-    # end
+    def articles
+      Article.all.select { |article| article.magazine == self }
+    end
     
-    # def article_titles
-    #   articles.map { |article| article.title }
-    # end
+    def article_titles
+      articles.map { |article| article.title }
+    end
     
     # def contributing_authors
     #   Article.all.select { |article| article.magazine == self }
