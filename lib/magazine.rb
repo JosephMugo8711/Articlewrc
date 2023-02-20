@@ -4,7 +4,7 @@ require_relative 'author'
 
 class Magazine
     attr_reader :name, :category
-    # @@all = []
+    @@all = []
     
     def initialize(name, category)
       @name = name
@@ -12,9 +12,9 @@ class Magazine
       @@all << self
     end
     
-    # def self.all
-    #   @@all
-    # end
+    def self.all
+      @@all
+    end
     
     # def self.find_by_name(name)
     #   @@all.find { |magazine| magazine.name == name }
