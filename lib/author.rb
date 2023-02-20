@@ -13,9 +13,9 @@ class Author
       Article.all.select { |article| article.author == self }
     end
     
-    # def magazines
-    #   articles.map { |article| article.magazine }.uniq
-    # end
+    def magazines
+      articles.map { |article| article.magazine }.uniq
+    end
     
     # def topic_areas
     #   magazines.map { |magazine| magazine.category }.uniq
