@@ -16,9 +16,9 @@ class Magazine
       @@all
     end
     
-    # def self.find_by_name(name)
-    #   @@all.find { |magazine| magazine.name == name }
-    # end
+    def self.find_by_name(name)
+      @@all.find { |magazine| magazine.name == name }
+    end
     
     # def name=(new_name)
     #   @name = new_name
