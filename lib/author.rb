@@ -5,9 +5,9 @@ class Author
       @name = name
     end
     
-    # def add_article(magazine, title)
-    #   Article.new(self, magazine, title)
-    # end
+    def add_article(magazine, title)
+      Article.new(self, magazine, title)
+    end
     
     # def articles
     #   Article.all.select { |article| article.author == self }
